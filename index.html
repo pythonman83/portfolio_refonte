@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Charset, pour afficher correctement les accents -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO - TITRE & DESCRIPTION -->
+<meta name="description" content="Portfolio de Jean-Claude Lugo, concepteur designer CDUI spécialisé en jeux vidéo, interfaces utilisateur (UI/UX) et développement web à Paris. Découvrez réalisations, compétences et expériences.">
+
+<!-- KEYWORDS (pas obligatoire mais accepté par Lighthouse) -->
+<meta name="keywords" content="Jean-Claude Lugo, Designer, CDUI, UI, UX, Portfolio, Jeux Vidéo, Développement Web, Paris, Game Design, Frontend, Créatif, Expérience Utilisateur, Immersif">
+
+<!-- AUTHOR -->
+<meta name="author" content="Jean-Claude Lugo">
+
+<!-- ROBOTS -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://votre-domaine.fr/">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Jean-Claude Lugo - Portfolio CDUI">
+<meta property="og:title" content="Jean-Claude Lugo - Concepteur Designer CDUI">
+<meta property="og:description" content="Portfolio de Jean-Claude Lugo, concepteur designer CDUI spécialisé en jeux vidéo, interfaces utilisateur (UI/UX) et développement web à Paris.">
+<meta property="og:url" content="https://votre-domaine.fr/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=800&fit=crop&crop=face">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jean-Claude Lugo - Concepteur Designer CDUI">
+<meta name="twitter:description" content="Portfolio de Jean-Claude Lugo, concepteur designer CDUI spécialisé en jeux vidéo, UI/UX et développement web à Paris.">
+<meta name="twitter:image" content="profil.jpg">
+
+<!-- Favicons (ajuste les chemins si besoin) -->
+<link rel="icon" href="logo.png" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Manifest (pour PWA) -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Theme color pour mobile -->
+<meta name="theme-color" content="#00f5ff">
+
+<!-- Accessibility - langue et direction -->
+<meta http-equiv="content-language" content="fr">
+<meta name="language" content="fr">
+
+    
+
+    <title>Jean-Claude Lugo - Concepteur Designer CDUI</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+
+<body>
+    <div id="scroll-progress-bar"></div>
+
+    <div class="animated-bg"></div>
+
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-gamepad me-2"></i>JEAN-CLAUDE LUGO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu de navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Héro -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start fade-in">
+                    <h1 class="neon-title">JEAN-CLAUDE LUGO</h1>
+                    <p class="neon-subtitle">Concepteur Designer CDUI • Jeux Vidéo</p>
+                    <p class="lead mb-4">Créateur d'expériences interactives immersives et d'interfaces utilisateur innovantes pour l'industrie du jeu vidéo. Passionné par l'alliance entre créativité et technologie.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#portfolio" class="neon-btn">
+                            <i class="fas fa-rocket me-2"></i>Voir Portfolio
+                        </a>
+                        <a href="#contact" class="neon-btn">
+                            <i class="fas fa-envelope me-2"></i>Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center fade-in">
+                    <img src="profil.jpg" alt="Potho Jean-Claude Lugo"  class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Héro -->
+
+    <!-- Section À propos -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="glass-card fade-in">
+                        <h2 class="text-center mb-4" style="color: var(--primary-neon); font-family: 'Orbitron', monospace;">À PROPOS DE MOI</h2>
+                        <p class="text-center mb-4">Diplômé en Conception et Développement d'Applications, spécialisé en UI/UX pour jeux vidéo, je combine créativité artistique et expertise technique pour créer des expériences utilisateur exceptionnelles.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5 style="color: var(--accent-neon);">
+                                    <i class="fas fa-user me-2"></i>Informations personnelles
+                                </h5>
+                                <ul class="list-unstyled">
+                                    <li><strong>Âge:</strong> 26 ans</li>
+                                    <li><strong>Localisation:</strong> Draguignan, Var</li>
+                                    <li><strong>Téléphone:</strong> +33 6 12 34 56 78</li>
+                                    <li><strong>Adresse mail:</strong> jc.lugo@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 style="color: var(--accent-neon);">
+                                    <i class="fas fa-trophy me-2"></i>Domaines d'expertise
+                                </h5>
+                                <ul class="list-unstyled">
+                                    <li>• Interface Utilisateur (UI)</li>
+                                    <li>• Expérience Utilisateur (UX)</li>
+                                    <li>• Game Design</li>
+                                    <li>• Développement Frontend</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section À propos -->
+
+    <!-- Section des compétences -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-neon); font-family: 'Orbitron', monospace;">COMPÉTENCES TECHNIQUES</h2>
+            <div class="row">
+                <div class="col-lg-6 fade-in">
+                    <div class="glass-card">
+                        <h4 class="mb-4" style="color: var(--accent-neon);">Design & Créativité</h4>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;">
+                                <span class="skill-name">Adobe Creative Suite</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;">
+                                <span class="skill-name">Figma / Sketch</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;">
+                                <span class="skill-name">Blender 3D</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 fade-in">
+                    <div class="glass-card">
+                        <h4 class="mb-4" style="color: var(--accent-neon);">Développement</h4>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%;">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;">
+                                <span class="skill-name">JavaScript / React</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;">
+                                <span class="skill-name">Unity 3D</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;">
+                                <span class="skill-name">C# / Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section des compétences -->
+
+    <!-- Section portfolio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-neon); font-family: 'Orbitron', monospace;">PORTFOLIO</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop" alt="Projet 1" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>Interface RPG Fantasy</h5>
+                                <p>Design complet d'interface pour jeu RPG</p>
+                                <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900&h=600&fit=crop"
+   data-caption="Interface RPG Fantasy – Design complet d'interface pour jeu RPG">
+  Voir Détails
+</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" alt="Projet 2" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>Application Mobile Gaming</h5>
+                                <p>UX/UI pour plateforme de jeux mobiles</p>
+                                <!-- <a href="#" class="neon-btn btn-sm">Voir Détails</a> -->
+                                 <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop"
+   data-caption="Application Mobile Gaming – UX/UI pour plateforme de jeux mobiles">
+  Voir Détails
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=300&fit=crop" alt="Projet 3" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>Interface Futuriste</h5>
+                                <p>Design d'interface pour jeu de science-fiction</p>
+                                <!-- <a href="#" class="neon-btn btn-sm">Voir Détails</a> -->
+                                <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=300&fit=crop"
+   data-caption="Interface Futuriste – Design d'interface pour jeu de science-fiction">
+  Voir Détails
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=400&h=300&fit=crop" alt="Projet 4" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>Dashboard Analytics</h5>
+                                <p>Interface de suivi pour développeurs de jeux</p>
+                                <!-- <a href="#" class="neon-btn btn-sm">Voir Détails</a> -->
+                                <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=400&h=300&fit=crop"
+   data-caption="Dashboard Analytics – Interface de suivi pour développeurs de jeux">
+  Voir Détails
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop" alt="Projet 5" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>E-sport Platform</h5>
+                                <p>Plateforme complète pour tournois e-sport</p>
+                                <!-- <a href="#" class="neon-btn btn-sm">Voir Détails</a> -->
+                                <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=300&fit=crop"
+   data-caption="E-sport Platform – Plateforme complète pour tournois e-sport">
+  Voir Détails
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 fade-in">
+                    <div class="portfolio-item">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop" alt="Projet 6" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5>VR Gaming Interface</h5>
+                                <p>Interface immersive pour réalité virtuelle</p>
+                                <!-- <a href="#" class="neon-btn btn-sm">Voir Détails</a> -->
+                                <a href="#" class="neon-btn btn-sm portfolio-detail-btn"
+   data-img="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop"
+   data-caption="VR Gaming Interface – Interface immersive pour réalité virtuelle">
+  Voir Détails
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section portfolio -->
+
+    <!-- Section experience  -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-neon); font-family: 'Orbitron', monospace;">EXPÉRIENCE PROFESSIONNELLE</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <h5 style="color: var(--accent-neon);">Lead UI/UX Designer</h5>
+                    <h6 style="color: var(--primary-neon);">GameStudio Pro • 2022 - Présent</h6>
+                    <p>Direction de l'équipe design UI/UX pour des projets AAA. Conception d'interfaces innovantes et optimisation de l'expérience utilisateur pour des jeux multi-plateformes.</p>
+                </div>
+                
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <h5 style="color: var(--accent-neon);">UI/UX Designer Senior</h5>
+                    <h6 style="color: var(--primary-neon);">Indie Games Collective • 2020 - 2022</h6>
+                    <p>Création d'interfaces utilisateur pour jeux indépendants. Collaboration étroite avec les développeurs pour intégrer le design dans Unity et Unreal Engine.</p>
+                </div>
+                
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <h5 style="color: var(--accent-neon);">Designer UI Junior</h5>
+                    <h6 style="color: var(--primary-neon);">PixelCraft Studio • 2018 - 2020</h6>
+                    <p>Première expérience professionnelle dans le design d'interfaces pour jeux mobiles. Apprentissage des spécificités du design gaming et des contraintes techniques.</p>
+                </div>
+                
+                <div class="timeline-item glass-card fade-in">
+                    <div class="timeline-dot"></div>
+                    <h5 style="color: var(--accent-neon);">Formation CDUI</h5>
+                    <h6 style="color: var(--primary-neon);">École Supérieure du Digital • 2016 - 2018</h6>
+                    <p>Diplôme de Concepteur Développeur d'Applications avec spécialisation en interfaces utilisateur et expérience utilisateur pour l'industrie du jeu vidéo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section experience  -->
+
+    <!-- Section contact  -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-neon); font-family: 'Orbitron', monospace;">CONTACTEZ-MOI</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form fade-in">
+                        <div class="row mb-4">
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="glass-card">
+                                    <i class="fas fa-envelope fa-2x mb-3" style="color: var(--primary-neon);"></i>
+                                    <h6>Adresse mail</h6>
+                                    <p>jc.lugo@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="glass-card">
+                                    <i class="fas fa-phone fa-2x mb-3" style="color: var(--primary-neon);"></i>
+                                    <h6>Téléphone</h6>
+                                    <p>+33 6 12 34 56 78</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="glass-card">
+                                    <i class="fas fa-map-marker-alt fa-2x mb-3" style="color: var(--primary-neon);"></i>
+                                    <h6>Localisation</h6>
+                                    <p>Draguignan, Var</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+<form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwpbvjz" method="POST">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <input type="text" name="nom" class="form-control" placeholder="Votre Nom" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <input type="email" name="email" class="form-control" placeholder="Votre Email" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <input type="tel" name="telephone" class="form-control" placeholder="Votre Téléphone">
+    </div>
+    <div class="col-md-6 mb-3">
+      <input type="text" name="sujet" class="form-control" placeholder="Sujet">
+    </div>
+  </div>
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="5" placeholder="Votre Message" required></textarea>
+  </div>
+  <!-- Champ anti-spam invisible -->
+  <input type="text" name="_gotcha" style="display:none">
+  <!-- Redirection après envoi (facultatif) -->
+  <input type="hidden" name="_next" value="https://votre-domaine.fr/merci.html">
+  <div class="text-center">
+    <button type="submit" class="neon-btn">
+      <i class="fas fa-paper-plane me-2"></i>Envoyer Message
+    </button>
+  </div>
+</form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section contact -->
+
+    <!-- Pied de page -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="glass-card">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 Jean-Claude Lugo - Concepteur Designer CDUI</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="social-links">
+                            <a href="#" class="me-3" style="color: var(--primary-neon); font-size: 1.5rem; text-decoration: none;" aria-label="Read more about Seminole tax hike">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="me-3" style="color: var(--primary-neon); font-size: 1.5rem; text-decoration: none;" aria-label="Read more about Seminole tax hike">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="me-3" style="color: var(--primary-neon); font-size: 1.5rem; text-decoration: none;" aria-label="Read more about Seminole tax hike">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="me-3" style="color: var(--primary-neon); font-size: 1.5rem; text-decoration: none;" aria-label="Read more about Seminole tax hike">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#" style="color: var(--primary-neon); font-size: 1.5rem; text-decoration: none;" aria-label="Read more about Seminole tax hike">
+                                <i class="fab fa-artstation"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Pied de page -->
+
+    <!-- Bouton retour haut de la page -->
+     <button id="scrollTopBtn" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+     </button>
+     <!-- Bouton retour haut de la page -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+   
+        
+
+<script src="js/script.js"></script>
+
+<!-- Modal Portfolio Custom -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="background:rgba(20,20,30,0.97); border-radius:20px; border:2px solid var(--primary-neon); box-shadow:0 0 30px #00f5ff55;">
+      <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Fermer" style="filter:invert(1);opacity:.8"></button>
+      <div class="modal-body p-0 text-center">
+        <img id="modalImage" src="" alt="" style="max-width:100%;max-height:54vh;object-fit:cover;border-radius:16px 16px 0 0;">
+        <div id="modalCaption" class="py-4" style="color:var(--primary-neon);font-family:'Orbitron',monospace;font-size:1.25rem;text-align:center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
